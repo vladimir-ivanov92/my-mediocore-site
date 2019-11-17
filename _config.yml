@@ -1,7 +1,6 @@
 title: CSS Advanced
 email: vladimir920522@gmail.com
 description: This page is for learning purpose.
-destination: docs
 baseurl: "" 
 url: "" 
 twitter_username: N/A
@@ -12,14 +11,14 @@ github_username:  vladimir_ivanov92
 plugins:
   - jekyll-feed
 
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

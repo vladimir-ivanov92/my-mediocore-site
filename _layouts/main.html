@@ -9,6 +9,17 @@
 <body>
     <h1>Header</h1>
     
+
+    <nav>
+        <ul>
+            {% for page in site.pages %}
+                {% if page.title %}
+                <li><a href="{{page.url}}">{{page.title}}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+    
     {{content}}
 
 
