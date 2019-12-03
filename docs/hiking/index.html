@@ -41,32 +41,21 @@
 
         <div class="event-form">
             <div class="organiser">
-                <p>
-                    <label for = "first_name">First Name</label>
-                    <input type="text", name="first_name", id="first_name", autofocus>
-                </p>
-                        
-                <p>
-                    <label for = "last_name">Last Name</label>
-                    <input type="text", name="last_name", id="last_name">
-                </p>
+                <label for = "first_name">Organiser's name</label>
+                <input type="text", name="organiser_name", id="organiser_name", autofocus>
             </div>
 
             <div class="place">
-                <p>
-                    <label for = "town">Place</label>
-                    <select name="town", id="town">
-                        <option value="Outdoor">Outdoor</option>
-                        <option value="Plovdiv">Home</option>
-                        <option value="Burgas">Public</option>
-                    </select>
-                </p>
+                <label for = "place">Place</label>
+                <select name="place", id="place">
+                    <option value="Outdoor">Outdoor</option>
+                    <option value="Home">Home</option>
+                    <option value="Public">Public</option>
+                </select> 
             </div>
 
-            <div class="description">
-                <p>
-                    <textarea name="text_area" rows="5" cols="20", placeholder="More information..."></textarea>
-                </p>
+            <div class="description"> 
+                <textarea name="text_area" rows="5" cols="20", placeholder="More information..."></textarea>
             </div>
         </div>
     </div>

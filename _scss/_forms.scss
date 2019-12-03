@@ -1,5 +1,24 @@
 .event-form {
     margin: auto;
-    padding-top: 3rem;
+    margin-top: 3rem;
     border: 1px, solid, thistle;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+
+    &.organiser {
+        display: block;
+    }
 }
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
