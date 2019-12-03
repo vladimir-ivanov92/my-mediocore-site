@@ -3,22 +3,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{site.baseurl}}/css/site.css">
-    <title>{{site.title}}</title>
+    <link rel="stylesheet" href="/css/site.css">
+    <title>CSS Advanced</title>
 </head>
 
 <body>
     <header class="site-header">
         <div class="site-wrapper">
             <div class="site-branding">
-                    <h1><a href="{{site.baseurl}}">Event Creater</a></h1>
+                    <h1><a href="">Event Creater</a></h1>
                     <p>Invite people, set up the date, add details...</p>
             </div>
         </div>
     </header>
 
     <div class="site-wrapper">
-        {{content}}
+        <article class="event">
+    <div class="event-media">
+        <img src="https://images.unsplash.com/photo-1534177616072-ef7dc120449d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" />
+    </div>
+    <div class="event-content">
+        <h3 class="entry-title">
+            <a href="#">Barbecue event</a>
+        </h3>
+        <div class="event-description">
+            <div>
+                <input type="checkbox" class="read-more-state" id="post-2" />
+                
+                <p class="read-more-wrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero fuga facilis vel consectetur quos sapiente deleniti eveniet dolores <span class="read-more-target">tempore eos deserunt officia quis ab? Excepturi vero tempore minus beatae voluptatem!</span></p>
+                
+                <label for="post-2" class="read-more-trigger"></label>
+            </div>
+        </div>
+    </div>
+</article>
     
 
         <div class="event-form">
