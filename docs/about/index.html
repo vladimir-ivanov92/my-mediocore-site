@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/my-mediocore-site/css/site.css">
+    <link rel="stylesheet" href="/css/site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <title>CSS Advanced</title>
 </head>
@@ -12,7 +12,7 @@
     <header class="site-header">
         <div class="site-wrapper">
             <div class="site-branding">
-                <h1><a href="/my-mediocore-site">Event Creater</a></h1>
+                <h1><a href="">Event Creater</a></h1>
                 <p>Create your own super special event and invite your friends</p>
             </div>
 
@@ -23,7 +23,7 @@
                             
                         
                             
-                            <li><a href="/my-mediocore-site/about/">About</a></li>
+                            <li><a href="/about/">About</a></li>
                             
                         
                             
@@ -31,21 +31,21 @@
                             
                         
                             
-                            <li><a href="/my-mediocore-site/contacts/">Contacts</a></li>
+                            <li><a href="/contacts/">Contacts</a></li>
                             
                         
                             
-                            <li><a href="/my-mediocore-site/gallery/">Gallery</a></li>
+                            <li><a href="/gallery/">Gallery</a></li>
                             
                         
                             
                         
                             
-                            <li><a href="/my-mediocore-site/">Home</a></li>
+                            <li><a href="/">Home</a></li>
                             
                         
                             
-                            <li><a href="/my-mediocore-site/services/">Services</a></li>
+                            <li><a href="/services/">Services</a></li>
                             
                         
                             
@@ -62,9 +62,84 @@
     
      <div class="site-wrapper">
          <div class="site-content">
-            <div class="meter">
-    <span style="width: 25%"></span>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script>
+    $(function() {
+        $(".meter > span").each(function() {
+            $(this)
+                .data("origWidth", $(this).width())
+                .width(0)
+                .animate({
+                    width: $(this).data("origWidth")
+                }, 1200);
+        });
+    });
+</script>
+
+<div class="about-content">
+    <h2><span class="tab"></span>Efficiency</h2>
+    <p><span class="tab"></span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quis optio odit ea libero, in aliquam perferendis veritatis laboriosam quas laudantium illum qui minima harum excepturi illo, nisi, nesciunt saepe.</p>
+    <div class="meter">
+        <span style="width: 34%"></span>
+        <p><a href="#User 1">34% more events in your life</a></p>
+    </div>
+    <p><span class="tab"></span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quis optio odit ea libero, in aliquam perferendis veritatis laboriosam quas laudantium illum qui minima harum excepturi illo, nisi, nesciunt saepe.</p>
+    <blockquote id="User 1">
+        Proin sit amet est vitae mi porttitor rhoncus sed nec neque. Praesent metus quam, sagittis eu mauris a, pellentesque suscipit justo. In varius tortor a ante feugiat, quis finibus magna blandit.
+        <cite>Happy User</cite>
+    </blockquote>
+    <p><span class="tab"></span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt dicta suscipit similique at, ex atque tempora eos quaerat magnam amet optio iste tenetur nisi earum, ducimus sit vel placeat provident!</p>
+    <p><span class="tab"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quaerat autem iusto atque impedit maxime laboriosam in odit culpa ipsam quae repellendus ratione voluptatibus molestiae, corporis ullam nobis a earum.</p>
 </div>
+
+<div class="about-content">
+    <h2>Happines</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, molestiae assumenda. Ex nobis temporibus iusto dolor animi, laborum ea, facere commodi provident est fugiat expedita beatae placeat corrupti? Accusamus, veniam!</p>
+    <div class="meter">
+        <span style="width: 68%"></span>
+        <p><a href="#User 2">68% of the people have confirmed that they fill more positive and organised since they are using the event creator.</a></p>
+    </div>
+    <p><span class="tab"></span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quis optio odit ea libero, in aliquam perferendis veritatis laboriosam quas laudantium illum qui minima harum excepturi illo, nisi, nesciunt saepe.</p>
+    <blockquote id="User 2">
+        Proin sit amet est vitae mi porttitor rhoncus sed nec neque. Praesent metus quam, sagittis eu mauris a, pellentesque suscipit justo. In varius tortor a ante feugiat, quis finibus magna blandit.
+        <cite>Happy User</cite>
+    </blockquote>
+    <p><span class="tab"></span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt dicta suscipit similique at, ex atque tempora eos quaerat magnam amet optio iste tenetur nisi earum, ducimus sit vel placeat provident!</p>
+    <p><span class="tab"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quaerat autem iusto atque impedit maxime laboriosam in odit culpa ipsam quae repellendus ratione voluptatibus molestiae, corporis ullam nobis a earum.</p>
+</div>
+
+<div class="about-content">
+    <h2>Consistancy</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, molestiae assumenda. Ex nobis temporibus iusto dolor animi, laborum ea, facere commodi provident est fugiat expedita beatae placeat corrupti? Accusamus, veniam!</p>
+    <div class="meter">
+        <span style="width: 24%"></span>
+        <p><a href="#User 3">24% of the people are using the event creator weekley.</a></p>
+    </div>
+    <p><span class="tab"></span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quis optio odit ea libero, in aliquam perferendis veritatis laboriosam quas laudantium illum qui minima harum excepturi illo, nisi, nesciunt saepe.</p>
+    <blockquote id="User 3">
+        Proin sit amet est vitae mi porttitor rhoncus sed nec neque. Praesent metus quam, sagittis eu mauris a, pellentesque suscipit justo. In varius tortor a ante feugiat, quis finibus magna blandit.
+        <cite>Happy User</cite>
+    </blockquote>
+    <p><span class="tab"></span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt dicta suscipit similique at, ex atque tempora eos quaerat magnam amet optio iste tenetur nisi earum, ducimus sit vel placeat provident!</p>
+    <p><span class="tab"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quaerat autem iusto atque impedit maxime laboriosam in odit culpa ipsam quae repellendus ratione voluptatibus molestiae, corporis ullam nobis a earum.</p>
+</div>
+
+<div class="about-content">
+    <h2>Friendship</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, molestiae assumenda. Ex nobis temporibus iusto dolor animi, laborum ea, facere commodi provident est fugiat expedita beatae placeat corrupti? Accusamus, veniam!</p>
+    <div class="meter">
+        <span style="width: 76%"></span>
+        <p><a href="#User 4">76% of the people confirm that they meet their friend more often now.</a></p>
+    </div>
+    <p><span class="tab"></span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quis optio odit ea libero, in aliquam perferendis veritatis laboriosam quas laudantium illum qui minima harum excepturi illo, nisi, nesciunt saepe.</p>
+    <blockquote id="User 4">
+        Proin sit amet est vitae mi porttitor rhoncus sed nec neque. Praesent metus quam, sagittis eu mauris a, pellentesque suscipit justo. In varius tortor a ante feugiat, quis finibus magna blandit.
+        <cite>Happy User</cite>
+    </blockquote>
+    <p><span class="tab"></span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt dicta suscipit similique at, ex atque tempora eos quaerat magnam amet optio iste tenetur nisi earum, ducimus sit vel placeat provident!</p>
+    <p><span class="tab"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quaerat autem iusto atque impedit maxime laboriosam in odit culpa ipsam quae repellendus ratione voluptatibus molestiae, corporis ullam nobis a earum.</p>
+</div>
+
 
          </div>
      </div>   
@@ -75,7 +150,7 @@
                 <ul class="site-footer-information">
                     <li>
                         <div class="dropdown">
-                            <a href="#">Our events</a>
+                            <a href="#">Our team</a>
                             <div class="dropdown-content">
                                 <a href="#">Gosho</a>
                                 <a href="#">Tosho</a>
