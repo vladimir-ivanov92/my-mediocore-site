@@ -9,11 +9,14 @@
 }
 
 .site-nav a {
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5em;
+    margin-right: 1em;
     display: block;
     color: #333;
     font-weight: 500;
-    transition: color 0.2s ease-in;
+    transition: border color 0.2s ease-in;
+    border: 2px solid rgb(153, 129, 51);
+    border-radius: 8px;
 }
 
 .site-nav a:hover,

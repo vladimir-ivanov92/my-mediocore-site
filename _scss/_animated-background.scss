@@ -1,10 +1,5 @@
-.area{
-    background: #4e54c8;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+.site-header-area{
     width: 100%;
-    height:100vh;
-    
-   
 }
 
 .circles{
@@ -23,7 +18,7 @@
     width: 20px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
-    animation: animate 25s linear infinite;
+    animation: animate 15s ease-in-out infinite;
     bottom: -150px;
     
 }
@@ -111,13 +106,14 @@
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
-        border-radius: 0;
+        border-radius: 20%;
     }
+
 
     100%{
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
-        border-radius: 50%;
+        border-radius: 75%;
     }
 
 }
