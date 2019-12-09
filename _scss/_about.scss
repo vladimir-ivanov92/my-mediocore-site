@@ -32,3 +32,11 @@ blockquote {
 .tab { 
     margin-left: 20px; 
 }
+
+
+.about-content a {
+    @include bp(mobile) {
+        display: block;     
+    }
+}
+

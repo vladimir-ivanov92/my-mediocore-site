@@ -75,7 +75,7 @@
     font-weight: 500;
 
     @include bp(desktop) {
-        margin-left: 0.5em;
+        margin-left: 1rem;
     }
 
     @include bp(mobile) {
