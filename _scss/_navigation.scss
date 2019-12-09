@@ -1,11 +1,31 @@
+.site-nav {
+    @include bp(mobile) {
+        display: block;
+        width: 100%;
+        align-content: center;
+     }
+}
+
+
 .site-nav ul {
     display: flex;
     align-items: center;
+
+    @include bp(mobile) {
+       flex-wrap: wrap;
+    }
 }
 
 .site-nav li {
     display: block;
     list-style: none outside;
+
+    @include bp(mobile) {
+        margin-bottom: 1rem;
+        flex-grow: 1;
+        flex-basis: 1;
+        flex-shrink: 1;
+    }
 }
 
 .site-nav a {
@@ -17,6 +37,12 @@
     transition: border color 0.2s ease-in;
     border: 2px solid rgb(153, 129, 51);
     border-radius: 8px;
+
+    @include bp(mobile) {
+        margin: 1rem;
+        padding: auto;
+        text-align:center;
+    }
 }
 
 .site-nav a:hover,

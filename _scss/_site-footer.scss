@@ -1,5 +1,10 @@
 .site-footer {
 	background-color: rgb(236, 238, 207);
+
+	@include bp(mobile) {
+        display: block;
+        width: 100%;
+   }
 }
 
 .site-footer .site-wrapper {
@@ -7,6 +12,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@include bp(mobile) {
+		flex-wrap: wrap;
+		padding: 1rem;
+   }
 }
 
 
