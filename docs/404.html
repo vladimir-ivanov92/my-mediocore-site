@@ -3,8 +3,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/my-mediocore-site/css/site.css">
+    <link rel="stylesheet" href="/css/site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        // window.onclick = function(event) {
+        //     if (!event.target.matches('.dropbtn')) {
+        //     var dropdowns = document.getElementsByClassName("dropdown-content");
+        //     var i;
+        //     for (i = 0; i < dropdowns.length; i++) {
+        //         var openDropdown = dropdowns[i];
+        //         if (openDropdown.classList.contains('show')) {
+        //         openDropdown.classList.remove('show');
+        //         }
+        //     }
+        //     }
+        // }
+    </script>
+
     <title>CSS Advanced</title>
 </head>
 <body>
@@ -12,7 +34,7 @@
     <header class="site-header">
         <div class="site-wrapper">
             <div class="site-branding">
-                <h1><a href="/my-mediocore-site/">Event Creater</a></h1>
+                <h1><a href="/">Event Creater</a></h1>
                 <p>Create your own super special event and invite your friends</p>
             </div>
             <div class="site-header-content">
@@ -23,7 +45,7 @@
                                 
                             
                                 
-                                <li><a href="/my-mediocore-site/about/">About</a></li>
+                                <li><a href="/about/">About</a></li>
                                 
                             
                                 
@@ -31,11 +53,11 @@
                                 
                             
                                 
-                                <li><a href="/my-mediocore-site/contacts/">Contacts</a></li>
+                                <li><a href="/contacts/">Contacts</a></li>
                                 
                             
                                 
-                                <li><a href="/my-mediocore-site/gallery/">Gallery</a></li>
+                                <li><a href="/gallery/">Gallery</a></li>
                                 
                             
                                 
@@ -43,7 +65,7 @@
                                 
                             
                                 
-                                <li><a href="/my-mediocore-site/services/">Services</a></li>
+                                <li><a href="/services/">Services</a></li>
                                 
                             
                                 
@@ -92,24 +114,34 @@
             <section class="site-footer-content">
                 <ul class="site-footer-information">
                     <li>
-                        <div class="dropdown">
+                        <div class="hover-dropdown">
                             <a href="#">Our team</a>
-                            <div class="dropdown-content">
+                            <div class="hover-dropdown-content">
                                 <a href="#">Gosho</a>
                                 <a href="#">Tosho</a>
                                 <a href="#">Pesho</a>
                             </div>
                         </div>
                     </li>
-                    <li><a href="#">Our events</a></li>
+                    <li>
+                        <div class="hover-dropdown">
+                            <a href="#">Our events</a>
+                            <div class="hover-dropdown-content">
+                                <a href="#">Winter</a>
+                                <a href="#">Spring</a>
+                                <a href="#">Summer</a>
+                                <a href="#">Autumn</a>
+                            </div>
+                        </div>  
+                    </li>
                     <li><a href="#">Our story</a></li>
                 </ul>
             </section>
 
             <section class="contact-form">
-                <form class="dropdown">
-                    <a href="#">Ask us</a>
-                    <div class="contact-form-dropdown">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Get in touch with us</button>
+                    <div id="myDropdown" class="dropdown-content">
                         <label for="name"></label>
                         <input type="text" id="name" name="name" placeholder="Your name..">
                     
@@ -117,11 +149,11 @@
                         <input type="email" id="contact-mail" name="e-mail" placeholder="your_email@mail.com">
                     
                         <label for="subject"></label>
-                        <textarea id="subject" name="subject" placeholder="Write here..." style="height:3rem"></textarea>
+                        <textarea id="subject" name="subject" placeholder="How can we help?" style="height:3rem"></textarea>
                     
                         <input type="submit" value="Submit">
                     </div>
-                </form> 
+                </div> 
             </section>
 
             <section class="site-footer-social">

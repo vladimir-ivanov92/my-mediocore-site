@@ -75,7 +75,7 @@
 
 .read-more-state {
     display: none;
-  }
+}
   
 .read-more-target {
     opacity: 0;
@@ -102,14 +102,12 @@
     cursor: pointer;
     display: inline-block;
     padding: 0.2em;
-    color: black;
+    color: rgb(153, 129, 51);
     border: 2px solid rgb(153, 129, 51);
     border-radius: 8px;
 }
 
 .read-more-trigger:hover {
-    color: #369;
-    border: 3px solid rgb(153, 129, 51);
-    
+    color: #3498db;
 }
 

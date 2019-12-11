@@ -1,5 +1,6 @@
 .site-footer {
 	background-color: rgb(236, 238, 207);
+	min-height: 18em;
 
 	@include bp(mobile) {
         display: block;
@@ -16,10 +17,11 @@
 	@include bp(mobile) {
 		flex-wrap: wrap;
 		padding: 1rem;
+		justify-content: center;
    }
 }
 
-
+//Footer list
 .site-footer ul {
 	display: flex;
     align-items: center;
@@ -44,64 +46,101 @@
 	font-size: 1.5rem;
 }
 
-.dropdown {
+//Dropdown hover
+.hover-dropdown {
 	position: relative;
 	display: inline-block;
 }
   
-.dropdown-content, .contact-form-dropdown {
+.hover-dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: #f1f1f1;
+	width: auto;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 }
 
-.contact-form-dropdown {
-	left: 5rem;
-	top: 0.8px;
-}
-  
-.dropdown-content a {
-	color: black;
+.hover-dropdown-content a {
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
 }
 
-.dropdown-content a:hover {
+.hover-dropdown-content a:hover {
 	background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content, .dropdown:hover .contact-form-dropdown {
+.hover-dropdown:hover .hover-dropdown-content {
 	display: block;
 }
 
 
-.copyright {
-    opacity: 0.3;
-	transition: opacity 0.3s ease-in;
+//Dropdown contacts
+.dropbtn {
+	color: rgb(153, 129, 51);
+	background-color: rgb(236, 238, 207);
+	padding: 8px;
+	border: 2px solid rgb(153, 129, 51);
+	border-radius: 8px;
+	cursor: pointer;
+}
+  
+.dropbtn:hover {
+	color: #3498db;
 }
 
-.copyright:hover {
-    opacity: 1;
+.dropdown {
+	position: relative;
+	display: inline-block;
 }
+  
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	overflow: auto;
+	z-index: 1;
+}
+  
+.show {display: block;}
 
-input, select, textarea {
+//Contacts form
+.site-footer input, .site-footer select, .site-footer textarea {
 	margin:0.2rem;
+	padding: 0.2rem;
 	width: 12rem;
 	border: 2px solid rgb(153, 129, 51);
 	border-radius: 8px; 
 	box-sizing: border-box; 
 	position: relative;
+	font-size: 14px;
+	font-family: Verdana, sans-serif;
 }
   
 input[type=submit] {
 	border: 2px solid rgb(153, 129, 51);
 	background-color: rgb(175, 182, 87);
-	border-radius: 4px;
+	border-radius: 8px;
 	transition: color 0.5s ease-in;
 	padding: 0.5rem;
 	color: white;
+	
+	&:hover {
+		cursor: pointer;
+		color: #3498db;
+	}
 }
 
+
+//Copyright
+.copyright {
+    opacity: 0.3;
+	transition: opacity 0.3s ease-in;
+	position: relative;
+	top: 3em;
+}
+
+.copyright:hover {
+    opacity: 1;
+}
