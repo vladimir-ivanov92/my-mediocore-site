@@ -20,6 +20,7 @@
     background: rgba(255, 255, 255, 0.2);
     animation: animate 15s ease-in-out infinite;
     bottom: -150px;
+    border-radius: 100%;
     
 }
 
@@ -100,20 +101,16 @@
 }
 
 
-
 @keyframes animate {
 
     0%{
-        transform: translateY(0) rotate(0deg);
+        transform: translateY(0);
         opacity: 1;
-        border-radius: 20%;
     }
 
 
     100%{
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(-1000px);
         opacity: 0;
-        border-radius: 75%;
     }
-
 }

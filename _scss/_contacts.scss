@@ -1,0 +1,64 @@
+.contacts-location {
+    margin: 2rem;
+}
+
+.fa-phone-square-alt {
+   color:green;
+   font-size: 1.5rem;
+   padding: 0.1rem 1rem 0.1rem 1rem;
+}
+
+//button
+.call {
+	color: rgb(153, 129, 51);
+	background-color: rgb(236, 238, 207);
+	padding: 8px;
+	border: 2px solid rgb(153, 129, 51);
+	border-radius: 8px;
+	cursor: pointer;
+}
+  
+.call:hover {
+	color: #3498db;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+  
+.call-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	overflow: visible;
+	z-index: 1;
+}
+
+//speech bubble
+
+.speech-bubble {
+	position: relative;
+	background-color: rgb(236, 238, 207);
+	padding: 8px;
+	border: 2px solid rgb(153, 129, 51);
+    border-radius: 8px;
+    left: 0rem;
+	top: 18px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+    top: 50%;
+    
+    //height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: rgb(153, 129, 51);
+	border-top: 0;
+	margin-left: -43px;
+	margin-top: -43px;
+}
+
+.show {display: block;}

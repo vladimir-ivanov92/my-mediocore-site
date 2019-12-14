@@ -3,28 +3,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/my-mediocore-site/css/site.css">
+    <link rel="stylesheet" href="/css/site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
+
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
+
+        function myFunction2() {
+            document.getElementById("callButton").classList.toggle("show");
+        }
         
-        // Close the dropdown if the user clicks outside of it
-        // window.onclick = function(event) {
-        //     if (!event.target.matches('.dropbtn')) {
-        //     var dropdowns = document.getElementsByClassName("dropdown-content");
-        //     var i;
-        //     for (i = 0; i < dropdowns.length; i++) {
-        //         var openDropdown = dropdowns[i];
-        //         if (openDropdown.classList.contains('show')) {
-        //         openDropdown.classList.remove('show');
-        //         }
-        //     }
-        //     }
-        // }
+
     </script>
 
     <title>CSS Advanced</title>
@@ -34,7 +25,7 @@
     <header class="site-header">
         <div class="site-wrapper">
             <div class="site-branding">
-                <h1><a href="/my-mediocore-site/">Event Creater</a></h1>
+                <h1><a href="/">Event Creator</a></h1>
                 <p>Create your own super special event and invite your friends</p>
             </div>
             <div class="site-header-content">
@@ -45,7 +36,7 @@
                                 
                             
                                 
-                                <li><a href="/my-mediocore-site/about/">About</a></li>
+                                <li><a href="/about/">About</a></li>
                                 
                             
                                 
@@ -53,11 +44,11 @@
                                 
                             
                                 
-                                <li><a href="/my-mediocore-site/contacts/">Contacts</a></li>
+                                <li><a href="/contacts/">Contacts</a></li>
                                 
                             
                                 
-                                <li><a href="/my-mediocore-site/gallery/">Gallery</a></li>
+                                <li><a href="/gallery/">Gallery</a></li>
                                 
                             
                                 
@@ -65,7 +56,7 @@
                                 
                             
                                 
-                                <li><a href="/my-mediocore-site/services/">Services</a></li>
+                                <li><a href="/services/">Services</a></li>
                                 
                             
                                 
@@ -102,11 +93,23 @@
 
     <div class="site-wrapper">
         <div class="site-content">
-            <div class="contacts-content">
-    <p>Do not contact us, just go grab a beer!</p>
+            <div class="contacts-location">
+    <p>Just click the button in the footer</p>
+
+    <span>You want to speak with a human...</span>
+    <div class="dropdown">
+        <button onclick="myFunction2()" class="call"></span><span><i class="fas fa-phone-square-alt"></i></span>
+            <div id="callButton" class="call-content">
+                <div class="speech-bubble">
+                    No human available....
+                </div>
+            </div>
+        </button>
+    </div>
+    <iframe width="100%" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=ul.%20%22Cherkovna%22%2041%2C%201505%20Oborishte%2C%20Sofia+(Sofia%2C%20)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" width="100%" height="450" paddingwidth ="50" frameborder="0" style="border: 2px solid rgb(153, 129, 51)" allowfullscreen=""></iframe>
 </div>
 
-<iframe width="100%" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=ul.%20%22Cherkovna%22%2041%2C%201505%20Oborishte%2C%20Sofia+(Sofia%2C%20)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" width="100%" height="450" paddingwidth ="50" frameborder="0" style="border: 2px solid rgb(153, 129, 51)" allowfullscreen=""></iframe>
+
         </div>
     </div>   
   

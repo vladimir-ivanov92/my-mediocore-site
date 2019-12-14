@@ -1,6 +1,6 @@
 .site-footer {
 	background-color: rgb(236, 238, 207);
-	min-height: 18em;
+	min-height: 20em;
 
 	@include bp(mobile) {
         display: block;
@@ -93,6 +93,7 @@
 .dropdown {
 	position: relative;
 	display: inline-block;
+	margin-bottom: 5rem;
 }
   
 .dropdown-content {
