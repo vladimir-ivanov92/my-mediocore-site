@@ -12,7 +12,7 @@
 	padding: 2em 0;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 
 	@include bp(mobile) {
 		flex-wrap: wrap;
@@ -139,7 +139,7 @@ input[type=submit] {
     opacity: 0.3;
 	transition: opacity 0.3s ease-in;
 	position: relative;
-	top: 3em;
+	
 }
 
 .copyright:hover {
